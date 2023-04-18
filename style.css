@@ -1,0 +1,65 @@
+body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+h1{
+    text-align: center;
+}
+
+.winner{
+    display: hidden;
+}
+
+.game-container{
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+    display: grid;
+    grid-template-columns: 75px 75px 75px;
+    gap: 20px;
+    justify-content: center;
+}
+
+.button-container{
+    display: flex;
+    justify-content: center;
+}
+.box{
+    width:75px;
+    height: 75px;
+    font-weight: bold;
+    font-size: 40px;
+    box-shadow: 5px 5px 5px black;
+    text-align: center;
+    background-color:green;
+    cursor: pointer;
+    animation: mymove 15s infinite alternate;
+}
+
+@keyframes mymove{
+    0%{
+        background-color: red ;
+    }
+    14%{
+        background-color: orange;
+    }
+    28%{
+        background-color: yellow;
+    }
+    42%{
+        background-color: green ;
+    }
+    66%{
+        background-color: rgb(0, 0, 162);
+    }
+    82%{
+        background-color: indigo;
+    }
+    28%{
+        background-color: violet;
+    }
+}
+
+.button{
+    cursor: pointer;
+    visibility: hidden;
+}
